@@ -18,6 +18,6 @@ module.exports = {
 	Grid: Grid,
 	converter: {
 		encode: encode,
-						decode: decode
+		decode: decode
 	}
 };

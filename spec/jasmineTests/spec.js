@@ -20,3 +20,12 @@ describe("converter", function() {
 	});
 
 });
+
+describe("grid", function() {
+  const newGrid = new conway.Grid([0,1], [0,3]);
+  it("initializes", function() {
+    expect(newGrid).toBeTruthy();
+  });
+
+
+});
