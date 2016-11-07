@@ -15,5 +15,8 @@ describe("converter", function() {
     expect(converter.encode(2,3)).toEqual('2_3');
     expect(converter.encode(1, -1)).toEqual('1_-1');
   });
+	it('decodes back', () => {
+			expect(converter.decode('2_3')).toEqual([2, 3]);
+	});
 
 });

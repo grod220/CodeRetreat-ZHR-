@@ -10,9 +10,14 @@ function encode(x,y) {
   return String(x) + '_' + String(y);
 }
 
+function decode(str) {
+	return str.split('_').map(Number);
+}
+
 module.exports = {
 	Grid: Grid,
 	converter: {
-		encode: encode
+		encode: encode,
+						decode: decode
 	}
 };
