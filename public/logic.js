@@ -6,11 +6,13 @@ class Grid {
 	}
 }
 
-function converter (x,y) {
+function encode(x,y) {
   return String(x) + '_' + String(y);
 }
 
 module.exports = {
 	Grid: Grid,
-  converter: converter
+	converter: {
+		encode: encode
+	}
 };

@@ -10,8 +10,10 @@ describe("Part 1", function() {
 });
 
 describe("converter", function() {
+  const converter = conway.converter;
   it("converts correctly", function() {
-    expect(conway.converter(2,3)).toEqual('2_3');
+    expect(converter.encode(2,3)).toEqual('2_3');
+    expect(converter.encode(1, -1)).toEqual('1_-1');
   });
 
 });
